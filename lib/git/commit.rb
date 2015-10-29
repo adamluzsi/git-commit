@@ -1,7 +1,7 @@
-require "git/commit/version"
+Git = Module.new unless defined?(Git)
+module Git::Commit
 
-module Git
-  module Commit
-    # Your code goes here...
-  end
+  require 'git/commit/version'
+  require 'git/commit/format'
+
 end
