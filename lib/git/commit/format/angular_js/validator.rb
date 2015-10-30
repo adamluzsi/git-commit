@@ -65,7 +65,7 @@ class Git::Commit::Format::AngularJS::Validator
 
     first_line_scope_strs = scope_content
 
-    return if first_line_scope_strs.empty?
+    return if first_line_scope_strs.nil?
 
     scope_str = first_line_scope_strs[0]
     if not scope_str.nil? and scope_str.to_s.length == 0

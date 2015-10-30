@@ -20,7 +20,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+git.commit help
+Commands:
+  git.commit help [COMMAND]      # Describe available commands or one specific command
+  git.commit validate [COMMAND]  # Validate Commit message or commit file content
+  git.commit validate angularjs <git commit message or file path>  # validate commit message or file content by angularjs commit conventions
+```
+
+I use this for enfoce angularJS git commit convention in commit-msg hook 
 
 ## Development
 

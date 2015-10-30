@@ -1,1 +1,6 @@
-require 'git-commit'
+#!/usr/bin/env ruby
+lib_folder = File.join(File.dirname(__FILE__), '..', 'lib')
+$LOAD_PATH.unshift(lib_folder) if Dir.exists?(lib_folder)
+
+require 'git/commit'
+Git::Commit::CLI.start(ARGV)

@@ -14,7 +14,5 @@ module RSpecHelpers
 end
 
 RSpec.configure do |c|
-
   c.include(RSpecHelpers)
-
 end

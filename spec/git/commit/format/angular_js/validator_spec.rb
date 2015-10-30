@@ -195,6 +195,13 @@ describe Git::Commit::Format::AngularJS::Validator do
       end
 
     end
+
+    context 'when scope is not given' do
+      let(:git_commit_message){'feat: test'}
+
+      it { is_expect.to_not raise_error }
+    end
+
   end
 
   describe '#validate_optional_body' do
